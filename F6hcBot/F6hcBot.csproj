@@ -49,6 +49,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HttpUnit\HttpHelper.cs" />
+    <Compile Include="HttpUnit\HttpHelpExtend.cs" />
     <Compile Include="Main\Controller.cs" />
     <Compile Include="Main\Model.cs" />
     <Compile Include="Main\ViewMain.cs">
@@ -57,6 +59,7 @@
     <Compile Include="Main\ViewMain.Designer.cs">
       <DependentUpon>ViewMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\MemberOrderModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Main\ViewMain.resx">
