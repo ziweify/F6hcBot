@@ -27,5 +27,10 @@ namespace F6Bot.Main
         {
 
         }
+
+        private void btnPanLogin_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

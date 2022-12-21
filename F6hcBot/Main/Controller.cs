@@ -13,5 +13,11 @@ namespace F6Bot.Main
 
         private static Model _model = new Model();
         public static Model getModel { get { return _model; } }
+
+
+        public static bool PanLogin()
+        {
+            return true;
+        }
     }
 }

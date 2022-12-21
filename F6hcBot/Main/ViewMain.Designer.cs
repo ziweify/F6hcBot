@@ -30,20 +30,23 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewMain));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabMain = new CCWin.SkinControl.SkinTabControl();
             this.tpData = new CCWin.SkinControl.SkinTabPage();
             this.tpSetting = new CCWin.SkinControl.SkinTabPage();
+            this.btnPostOrderBoss = new CCWin.SkinControl.SkinButton();
             this.skinGroupBox1 = new CCWin.SkinControl.SkinGroupBox();
             this.dgvLogs = new CCWin.SkinControl.SkinDataGridView();
-            this.btnPostOrderBoss = new CCWin.SkinControl.SkinButton();
+            this.pnlPan = new CCWin.SkinControl.SkinCaptionPanel();
+            this.btnPanLogin = new CCWin.SkinControl.SkinButton();
             this.tabMain.SuspendLayout();
             this.tpSetting.SuspendLayout();
             this.skinGroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLogs)).BeginInit();
+            this.pnlPan.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabMain
@@ -67,7 +70,7 @@
             this.tabMain.PageHover = ((System.Drawing.Image)(resources.GetObject("tabMain.PageHover")));
             this.tabMain.PageImagePosition = CCWin.SkinControl.SkinTabControl.ePageImagePosition.Left;
             this.tabMain.PageNorml = null;
-            this.tabMain.SelectedIndex = 1;
+            this.tabMain.SelectedIndex = 0;
             this.tabMain.Size = new System.Drawing.Size(487, 421);
             this.tabMain.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabMain.TabIndex = 0;
@@ -95,6 +98,21 @@
             this.tpSetting.TabItemImage = null;
             this.tpSetting.Text = "设置";
             // 
+            // btnPostOrderBoss
+            // 
+            this.btnPostOrderBoss.BackColor = System.Drawing.Color.Transparent;
+            this.btnPostOrderBoss.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.btnPostOrderBoss.DownBack = null;
+            this.btnPostOrderBoss.Location = new System.Drawing.Point(3, 3);
+            this.btnPostOrderBoss.MouseBack = null;
+            this.btnPostOrderBoss.Name = "btnPostOrderBoss";
+            this.btnPostOrderBoss.NormlBack = null;
+            this.btnPostOrderBoss.Size = new System.Drawing.Size(113, 23);
+            this.btnPostOrderBoss.TabIndex = 0;
+            this.btnPostOrderBoss.Text = "PostOrder[boss]";
+            this.btnPostOrderBoss.UseVisualStyleBackColor = false;
+            this.btnPostOrderBoss.Click += new System.EventHandler(this.btnPostOrderBoss_Click);
+            // 
             // skinGroupBox1
             // 
             this.skinGroupBox1.BackColor = System.Drawing.Color.Transparent;
@@ -115,30 +133,30 @@
             // 
             // dgvLogs
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(246)))), ((int)(((byte)(253)))));
-            this.dgvLogs.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(246)))), ((int)(((byte)(253)))));
+            this.dgvLogs.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvLogs.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgvLogs.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvLogs.ColumnFont = null;
             this.dgvLogs.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(246)))), ((int)(((byte)(239)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvLogs.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(246)))), ((int)(((byte)(239)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvLogs.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvLogs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLogs.ColumnSelectForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(188)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvLogs.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(188)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvLogs.DefaultCellStyle = dataGridViewCellStyle7;
             this.dgvLogs.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvLogs.EnableHeadersVisualStyles = false;
             this.dgvLogs.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
@@ -148,11 +166,11 @@
             this.dgvLogs.Name = "dgvLogs";
             this.dgvLogs.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvLogs.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.dgvLogs.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.dgvLogs.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.dgvLogs.RowTemplate.Height = 23;
             this.dgvLogs.Size = new System.Drawing.Size(481, 273);
             this.dgvLogs.TabIndex = 0;
@@ -160,20 +178,32 @@
             this.dgvLogs.TitleBackColorBegin = System.Drawing.Color.White;
             this.dgvLogs.TitleBackColorEnd = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(196)))), ((int)(((byte)(242)))));
             // 
-            // btnPostOrderBoss
+            // pnlPan
             // 
-            this.btnPostOrderBoss.BackColor = System.Drawing.Color.Transparent;
-            this.btnPostOrderBoss.ControlState = CCWin.SkinClass.ControlState.Normal;
-            this.btnPostOrderBoss.DownBack = null;
-            this.btnPostOrderBoss.Location = new System.Drawing.Point(3, 3);
-            this.btnPostOrderBoss.MouseBack = null;
-            this.btnPostOrderBoss.Name = "btnPostOrderBoss";
-            this.btnPostOrderBoss.NormlBack = null;
-            this.btnPostOrderBoss.Size = new System.Drawing.Size(113, 23);
-            this.btnPostOrderBoss.TabIndex = 0;
-            this.btnPostOrderBoss.Text = "PostOrder[boss]";
-            this.btnPostOrderBoss.UseVisualStyleBackColor = false;
-            this.btnPostOrderBoss.Click += new System.EventHandler(this.btnPostOrderBoss_Click);
+            this.pnlPan.CaptionFont = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.pnlPan.Controls.Add(this.btnPanLogin);
+            this.pnlPan.Location = new System.Drawing.Point(7, 60);
+            this.pnlPan.Name = "pnlPan";
+            this.pnlPan.Size = new System.Drawing.Size(484, 98);
+            this.pnlPan.TabIndex = 0;
+            this.pnlPan.Text = "盘口";
+            // 
+            // btnPanLogin
+            // 
+            this.btnPanLogin.BackColor = System.Drawing.Color.Transparent;
+            this.btnPanLogin.BaseColor = System.Drawing.Color.Silver;
+            this.btnPanLogin.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.btnPanLogin.DownBack = null;
+            this.btnPanLogin.DownBaseColor = System.Drawing.Color.Gray;
+            this.btnPanLogin.Location = new System.Drawing.Point(5, 27);
+            this.btnPanLogin.MouseBack = null;
+            this.btnPanLogin.Name = "btnPanLogin";
+            this.btnPanLogin.NormlBack = null;
+            this.btnPanLogin.Size = new System.Drawing.Size(56, 23);
+            this.btnPanLogin.TabIndex = 0;
+            this.btnPanLogin.Text = "登录";
+            this.btnPanLogin.UseVisualStyleBackColor = false;
+            this.btnPanLogin.Click += new System.EventHandler(this.btnPanLogin_Click);
             // 
             // ViewMain
             // 
@@ -181,6 +211,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(501, 758);
+            this.Controls.Add(this.pnlPan);
             this.Controls.Add(this.skinGroupBox1);
             this.Controls.Add(this.tabMain);
             this.Name = "ViewMain";
@@ -190,6 +221,7 @@
             this.tpSetting.ResumeLayout(false);
             this.skinGroupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLogs)).EndInit();
+            this.pnlPan.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -202,6 +234,8 @@
         private CCWin.SkinControl.SkinGroupBox skinGroupBox1;
         private CCWin.SkinControl.SkinDataGridView dgvLogs;
         private CCWin.SkinControl.SkinButton btnPostOrderBoss;
+        private CCWin.SkinControl.SkinCaptionPanel pnlPan;
+        private CCWin.SkinControl.SkinButton btnPanLogin;
     }
 }
 

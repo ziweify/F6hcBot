@@ -21,7 +21,7 @@ using System.Net.Security;
 using System.Linq;
 using System.Net.Cache;
 
-namespace F6Bot.HttpUnit
+namespace FUniti.Http
 {
     /// <summary>
     /// Http连接操作帮助类

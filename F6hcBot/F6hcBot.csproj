@@ -8,10 +8,11 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>F6Bot</RootNamespace>
     <AssemblyName>F6hcBot</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -49,8 +50,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HttpUnit\HttpHelper.cs" />
-    <Compile Include="HttpUnit\HttpHelpExtend.cs" />
     <Compile Include="Main\Controller.cs" />
     <Compile Include="Main\Model.cs" />
     <Compile Include="Main\ViewMain.cs">
@@ -62,6 +61,7 @@
     <Compile Include="Model\MemberOrderModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="www\w22338c.cs" />
     <EmbeddedResource Include="Main\ViewMain.resx">
       <DependentUpon>ViewMain.cs</DependentUpon>
     </EmbeddedResource>

@@ -6,7 +6,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace F6Bot.HttpUnit
+namespace FUniti.Http
 {
     public static class HttpHelpExtend
     {
