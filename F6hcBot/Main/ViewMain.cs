@@ -30,6 +30,11 @@ namespace F6Bot.Main
 
         private void btnPanLogin_Click(object sender, EventArgs e)
         {
+            this.PanLogin();
+        }
+
+        private void ViewMain_Load(object sender, EventArgs e)
+        {
 
         }
     }

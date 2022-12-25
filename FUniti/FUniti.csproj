@@ -46,6 +46,8 @@
     <Compile Include="Http\HttpHelper.cs" />
     <Compile Include="Http\HttpHelpExtend.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SystemExtend\FRanDom.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -37,6 +37,21 @@
     <Reference Include="CSkin">
       <HintPath>..\libs\CSkin.dll</HintPath>
     </Reference>
+    <Reference Include="EO.Base">
+      <HintPath>..\libs\EO.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="EO.Web">
+      <HintPath>..\libs\EO.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="EO.Web.Design">
+      <HintPath>..\libs\EO.Web.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="EO.WebBrowser">
+      <HintPath>..\libs\EO.WebBrowser.dll</HintPath>
+    </Reference>
+    <Reference Include="EO.WebEngine">
+      <HintPath>..\libs\EO.WebEngine.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -61,7 +76,13 @@
     <Compile Include="Model\MemberOrderModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="www\w22338c.cs" />
+    <Compile Include="Controls\WebBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\WebBrowser.Designer.cs">
+      <DependentUpon>WebBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="www\W22338c.cs" />
     <EmbeddedResource Include="Main\ViewMain.resx">
       <DependentUpon>ViewMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -75,6 +96,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Controls\WebBrowser.resx">
+      <DependentUpon>WebBrowser.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -88,5 +112,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FUniti\FUniti.csproj">
+      <Project>{32ae0b5e-eeaf-4e83-87ac-0af4b69b885d}</Project>
+      <Name>FUniti</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
